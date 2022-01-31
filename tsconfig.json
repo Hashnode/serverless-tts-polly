@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "target": "ES2018",
     "module": "commonjs",
-    "lib": [
-      "es2018"
-    ],
+    "lib": ["es2018"],
     "declaration": true,
-    "strict": true,
-    "noImplicitAny": true,
+    "strict": false,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
@@ -19,12 +19,10 @@
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
+    "typeRoots": ["./node_modules/@types"],
+    "rootDir": "./",
+    "baseUrl": "./"
   },
-  "exclude": [
-    "node_modules",
-    "cdk.out"
-  ]
+  "exclude": ["node_modules", "cdk.out"],
+  "include": ["**/*.ts", "**/*.tsx", "types/*"]
 }
